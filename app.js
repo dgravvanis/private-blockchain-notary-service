@@ -207,8 +207,8 @@ const init = async () => {
           // Validation
           address: Joi.string().min(26).max(35).required(),
           star: Joi.object().keys({
-            dec: Joi.string().max(12).required(),
-            ra: Joi.string().max(12).required(),
+            dec: Joi.string().max(15).required(),
+            ra: Joi.string().max(15).required(),
             story: Joi.string().max(250).required()
           }).required()
         }
